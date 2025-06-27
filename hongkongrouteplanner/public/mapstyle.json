@@ -1,12 +1,12 @@
 {
   "version": 8,
   "name": "style@5.0.0 flavor@light lang@en",
-  "metadata": {"maputnik:renderer": "mlgljs"},
+  "metadata": { "maputnik:renderer": "mlgljs" },
   "sources": {
     "protomaps": {
       "attribution": "<a href=\"https://github.com/protomaps/basemaps\">Wheels</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
       "type": "vector",
-      "url": "pmtiles://https://demo-bucket.protomaps.com/v4.pmtiles"
+      "url": "pmtiles://http://direct.maps.wheels.anscg.net/hongkong.pmtiles"
     }
   },
   "sprite": "https://protomaps.github.io/basemaps-assets/sprites/v4/light",
@@ -15,7 +15,7 @@
     {
       "id": "background",
       "type": "background",
-      "paint": {"background-color": "#cccccc"}
+      "paint": { "background-color": "#cccccc" }
     },
     {
       "id": "earth-copy-copy",
@@ -23,7 +23,7 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(0, 0, 0, 1)",
         "fill-antialias": false,
@@ -37,7 +37,7 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(0, 0, 0, 1)",
         "fill-antialias": false,
@@ -51,15 +51,15 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "#f4f0ef", "fill-antialias": false}
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "#f4f0ef", "fill-antialias": false }
     },
     {
       "id": "landcover",
       "type": "fill",
       "source": "protomaps",
       "source-layer": "landcover",
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": [
           "match",
@@ -155,7 +155,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "allotments", "village_green", "playground"],
-      "paint": {"fill-color": "#9cd3b4", "fill-opacity": 0.7}
+      "paint": { "fill-color": "#9cd3b4", "fill-opacity": 0.7 }
     },
     {
       "id": "landuse_hospital",
@@ -163,7 +163,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "hospital"],
-      "paint": {"fill-color": "#e4dad9"}
+      "paint": { "fill-color": "#e4dad9" }
     },
     {
       "id": "landuse_industrial",
@@ -171,7 +171,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "industrial"],
-      "paint": {"fill-color": "#d1dde1"}
+      "paint": { "fill-color": "#d1dde1" }
     },
     {
       "id": "landuse_school",
@@ -179,7 +179,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "school", "university", "college"],
-      "paint": {"fill-color": "#e4ded7"}
+      "paint": { "fill-color": "#e4ded7" }
     },
     {
       "id": "landuse_beach",
@@ -187,7 +187,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "beach"],
-      "paint": {"fill-color": "#e8e4d0"}
+      "paint": { "fill-color": "#e8e4d0" }
     },
     {
       "id": "landuse_zoo",
@@ -195,7 +195,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "zoo"],
-      "paint": {"fill-color": "#c6dcdc"}
+      "paint": { "fill-color": "#c6dcdc" }
     },
     {
       "id": "landuse_aerodrome",
@@ -203,7 +203,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "aerodrome"],
-      "paint": {"fill-color": "#dadbdf"}
+      "paint": { "fill-color": "#dadbdf" }
     },
     {
       "id": "roads_runway",
@@ -254,7 +254,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["any", ["in", "kind", "runway", "taxiway"]],
-      "paint": {"fill-color": "#e9e9ed"}
+      "paint": { "fill-color": "#e9e9ed" }
     },
     {
       "id": "water",
@@ -262,7 +262,7 @@
       "source": "protomaps",
       "source-layer": "water",
       "filter": ["==", "$type", "Polygon"],
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(153, 221, 255, 1)",
         "fill-outline-color": "rgba(0, 0, 0, .2)"
@@ -275,7 +275,7 @@
       "source-layer": "water",
       "minzoom": 14,
       "filter": ["in", "kind", "stream"],
-      "paint": {"line-color": "#80deea", "line-width": 0.5}
+      "paint": { "line-color": "#80deea", "line-width": 0.5 }
     },
     {
       "id": "water_river",
@@ -305,7 +305,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "pedestrian", "dam"],
-      "paint": {"fill-color": "#e3e0d4"}
+      "paint": { "fill-color": "#e3e0d4" }
     },
     {
       "id": "landuse_pier",
@@ -313,7 +313,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "pier"],
-      "paint": {"fill-color": "#e0e0e0"}
+      "paint": { "fill-color": "#e0e0e0" }
     },
     {
       "id": "roads_tunnels_other_casing",
@@ -671,7 +671,7 @@
         ["==", "kind", "minor_road"],
         ["!=", "kind_detail", "service"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(161, 171, 195, 1)",
         "line-gap-width": 0,
@@ -702,7 +702,7 @@
         ["in", "kind", "other", "path"],
         ["!=", "kind_detail", "pier"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(201, 191, 187, 1)",
         "line-width": [
@@ -733,7 +733,7 @@
         ["==", "kind", "minor_road"],
         ["==", "kind_detail", "service"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-gap-width": [
           "interpolate",
@@ -773,7 +773,7 @@
         ["in", "kind", "other", "path"],
         ["!=", "kind_detail", "pier"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "#EEEAEE",
         "line-width": [
@@ -821,7 +821,7 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
-      "layout": {"line-join": "round", "line-cap": "round"},
+      "layout": { "line-join": "round", "line-cap": "round" },
       "paint": {
         "line-color": "rgba(0, 0, 0, 1)",
         "line-gap-width": 0,
@@ -884,7 +884,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": {"line-cap": "round"},
+      "layout": { "line-cap": "round" },
       "paint": {
         "line-color": "rgba(78, 89, 118, 1)",
         "line-gap-width": 0,
@@ -934,7 +934,7 @@
         ["==", "kind", "minor_road"],
         ["==", "kind_detail", "service"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": [
           "interpolate",
@@ -972,7 +972,7 @@
         ["==", "kind", "minor_road"],
         ["!=", "kind_detail", "service"]
       ],
-      "layout": {"line-join": "round", "line-cap": "round"},
+      "layout": { "line-join": "round", "line-cap": "round" },
       "paint": {
         "line-color": [
           "interpolate",
@@ -1111,7 +1111,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": {"line-cap": "round"},
+      "layout": { "line-cap": "round" },
       "paint": {
         "line-color": "#A1B0C4",
         "line-width": [
@@ -1226,7 +1226,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": {"line-join": "miter", "line-cap": "butt"},
+      "layout": { "line-join": "miter", "line-cap": "butt" },
       "paint": {
         "line-color": "rgba(78, 89, 118, 1)",
         "line-gap-width": 0,
@@ -1326,7 +1326,7 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
-      "layout": {"line-join": "round", "line-cap": "butt"},
+      "layout": { "line-join": "round", "line-cap": "butt" },
       "paint": {
         "line-color": "rgba(161, 171, 195, 1)",
         "line-gap-width": 0,
@@ -1419,7 +1419,7 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "#BEC5D8",
         "line-width": [
@@ -1448,7 +1448,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": {"line-cap": "butt", "line-join": "miter"},
+      "layout": { "line-cap": "butt", "line-join": "miter" },
       "paint": {
         "line-color": "#A1B0C4",
         "line-width": [
