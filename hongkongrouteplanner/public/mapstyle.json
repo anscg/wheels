@@ -6,7 +6,7 @@
     "protomaps": {
       "attribution": "<a href=\"https://github.com/protomaps/basemaps\">Wheels</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
       "type": "vector",
-      "url": "pmtiles://http://direct.maps.wheels.anscg.net/hongkong.pmtiles"
+      "url": "pmtiles://https://direct.maps.wheels.anscg.net/hongkong.pmtiles"
     }
   },
   "sprite": "https://protomaps.github.io/basemaps-assets/sprites/v4/light",
