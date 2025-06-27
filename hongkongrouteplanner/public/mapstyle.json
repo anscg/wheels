@@ -1,12 +1,12 @@
 {
   "version": 8,
   "name": "style@5.0.0 flavor@light lang@en",
-  "metadata": { "maputnik:renderer": "mlgljs" },
+  "metadata": {"maputnik:renderer": "mlgljs"},
   "sources": {
     "protomaps": {
       "attribution": "<a href=\"https://github.com/protomaps/basemaps\">Wheels</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
       "type": "vector",
-      "url": "pmtiles://http://direct.maps.wheels.anscg.net/hongkong.pmtiles"
+      "url": "pmtiles://https://demo-bucket.protomaps.com/v4.pmtiles"
     }
   },
   "sprite": "https://protomaps.github.io/basemaps-assets/sprites/v4/light",
@@ -15,16 +15,7 @@
     {
       "id": "background",
       "type": "background",
-      "paint": { "background-color": "#cccccc" }
-    },
-    {
-      "id": "water",
-      "type": "fill",
-      "source": "protomaps",
-      "source-layer": "water",
-      "filter": ["==", "$type", "Polygon"],
-      "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "#98DCFE" }
+      "paint": {"background-color": "#cccccc"}
     },
     {
       "id": "earth-copy-copy",
@@ -32,7 +23,7 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": { "visibility": "visible" },
+      "layout": {"visibility": "visible"},
       "paint": {
         "fill-color": "rgba(0, 0, 0, 1)",
         "fill-antialias": false,
@@ -46,7 +37,7 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": { "visibility": "visible" },
+      "layout": {"visibility": "visible"},
       "paint": {
         "fill-color": "rgba(0, 0, 0, 1)",
         "fill-antialias": false,
@@ -60,15 +51,15 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "#f4f0ef", "fill-antialias": false }
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "#f4f0ef", "fill-antialias": false}
     },
     {
       "id": "landcover",
       "type": "fill",
       "source": "protomaps",
       "source-layer": "landcover",
-      "layout": { "visibility": "visible" },
+      "layout": {"visibility": "visible"},
       "paint": {
         "fill-color": [
           "match",
@@ -135,7 +126,7 @@
               ]
             ]
           ],
-          "#b7eaac",
+          "#9ee198",
           [
             "in",
             ["get", "kind"],
@@ -143,7 +134,7 @@
           ],
           "#a0d9a0",
           ["in", ["get", "kind"], ["literal", ["scrub", "grassland", "grass"]]],
-          "#99d2bb",
+          "#c1e9b9",
           ["in", ["get", "kind"], ["literal", ["glacier"]]],
           "#e7e7e7",
           ["in", ["get", "kind"], ["literal", ["sand"]]],
@@ -154,7 +145,7 @@
             ["literal", ["military", "naval_base", "airfield"]]
           ],
           "#c6dcdc",
-          "#e2dfda"
+          "#9ee198"
         ]
       }
     },
@@ -164,7 +155,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "allotments", "village_green", "playground"],
-      "paint": { "fill-color": "#9cd3b4", "fill-opacity": 0.7 }
+      "paint": {"fill-color": "#9cd3b4", "fill-opacity": 0.7}
     },
     {
       "id": "landuse_hospital",
@@ -172,7 +163,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "hospital"],
-      "paint": { "fill-color": "#e4dad9" }
+      "paint": {"fill-color": "#e4dad9"}
     },
     {
       "id": "landuse_industrial",
@@ -180,7 +171,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "industrial"],
-      "paint": { "fill-color": "#d1dde1" }
+      "paint": {"fill-color": "#d1dde1"}
     },
     {
       "id": "landuse_school",
@@ -188,7 +179,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "school", "university", "college"],
-      "paint": { "fill-color": "#e4ded7" }
+      "paint": {"fill-color": "#e4ded7"}
     },
     {
       "id": "landuse_beach",
@@ -196,7 +187,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "beach"],
-      "paint": { "fill-color": "#e8e4d0" }
+      "paint": {"fill-color": "#e8e4d0"}
     },
     {
       "id": "landuse_zoo",
@@ -204,7 +195,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "zoo"],
-      "paint": { "fill-color": "#c6dcdc" }
+      "paint": {"fill-color": "#c6dcdc"}
     },
     {
       "id": "landuse_aerodrome",
@@ -212,7 +203,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "aerodrome"],
-      "paint": { "fill-color": "#dadbdf" }
+      "paint": {"fill-color": "#dadbdf"}
     },
     {
       "id": "roads_runway",
@@ -263,7 +254,19 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["any", ["in", "kind", "runway", "taxiway"]],
-      "paint": { "fill-color": "#e9e9ed" }
+      "paint": {"fill-color": "#e9e9ed"}
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "protomaps",
+      "source-layer": "water",
+      "filter": ["==", "$type", "Polygon"],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(153, 221, 255, 1)",
+        "fill-outline-color": "rgba(0, 0, 0, .2)"
+      }
     },
     {
       "id": "water_stream",
@@ -272,7 +275,7 @@
       "source-layer": "water",
       "minzoom": 14,
       "filter": ["in", "kind", "stream"],
-      "paint": { "line-color": "#80deea", "line-width": 0.5 }
+      "paint": {"line-color": "#80deea", "line-width": 0.5}
     },
     {
       "id": "water_river",
@@ -282,7 +285,7 @@
       "minzoom": 9,
       "filter": ["in", "kind", "river"],
       "paint": {
-        "line-color": "#80deea",
+        "line-color": "rgba(153, 221, 255, 1)",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -302,7 +305,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "pedestrian", "dam"],
-      "paint": { "fill-color": "#e3e0d4" }
+      "paint": {"fill-color": "#e3e0d4"}
     },
     {
       "id": "landuse_pier",
@@ -310,7 +313,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "pier"],
-      "paint": { "fill-color": "#e0e0e0" }
+      "paint": {"fill-color": "#e0e0e0"}
     },
     {
       "id": "roads_tunnels_other_casing",
@@ -629,7 +632,11 @@
       "source": "protomaps",
       "source-layer": "buildings",
       "filter": ["in", "kind", "building", "building_part"],
-      "paint": { "fill-color": "#cccccc", "fill-opacity": 0.5 }
+      "paint": {
+        "fill-color": "rgba(222, 215, 211, 1)",
+        "fill-opacity": 0.8,
+        "fill-outline-color": "rgba(191, 181, 176, 1)"
+      }
     },
     {
       "id": "roads_pier",
@@ -664,7 +671,7 @@
         ["==", "kind", "minor_road"],
         ["!=", "kind_detail", "service"]
       ],
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {"line-cap": "round", "line-join": "round"},
       "paint": {
         "line-color": "rgba(161, 171, 195, 1)",
         "line-gap-width": 0,
@@ -695,7 +702,7 @@
         ["in", "kind", "other", "path"],
         ["!=", "kind_detail", "pier"]
       ],
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {"line-cap": "round", "line-join": "round"},
       "paint": {
         "line-color": "rgba(201, 191, 187, 1)",
         "line-width": [
@@ -726,7 +733,7 @@
         ["==", "kind", "minor_road"],
         ["==", "kind_detail", "service"]
       ],
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {"line-cap": "round", "line-join": "round"},
       "paint": {
         "line-gap-width": [
           "interpolate",
@@ -766,7 +773,7 @@
         ["in", "kind", "other", "path"],
         ["!=", "kind_detail", "pier"]
       ],
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {"line-cap": "round", "line-join": "round"},
       "paint": {
         "line-color": "#EEEAEE",
         "line-width": [
@@ -808,6 +815,33 @@
       }
     },
     {
+      "id": "roads_bridges_major_casing_shadow",
+      "type": "line",
+      "source": "protomaps",
+      "source-layer": "roads",
+      "minzoom": 12,
+      "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
+      "layout": {"line-join": "round", "line-cap": "round"},
+      "paint": {
+        "line-color": "rgba(0, 0, 0, 1)",
+        "line-gap-width": 0,
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.5],
+          ["zoom"],
+          3,
+          0,
+          18,
+          28,
+          22,
+          300,
+          24,
+          340
+        ],
+        "line-blur": 30
+      }
+    },
+    {
       "id": "roads_major_casing_late",
       "type": "line",
       "source": "protomaps",
@@ -820,28 +854,20 @@
         ["==", "kind", "major_road"]
       ],
       "paint": {
-        "line-color": "#e0e0e0",
-        "line-gap-width": [
-          "interpolate",
-          ["exponential", 1.6],
-          ["zoom"],
-          6,
-          0,
-          12,
-          1.6,
-          15,
-          3,
-          18,
-          13
-        ],
+        "line-color": "rgba(161, 171, 195, 1)",
+        "line-gap-width": 0,
         "line-width": [
           "interpolate",
-          ["exponential", 1.6],
+          ["exponential", 1.5],
           ["zoom"],
-          9,
+          3,
           0,
-          9.5,
-          1
+          18,
+          27,
+          22,
+          270,
+          24,
+          320
         ]
       }
     },
@@ -858,7 +884,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": { "line-cap": "round" },
+      "layout": {"line-cap": "round"},
       "paint": {
         "line-color": "rgba(78, 89, 118, 1)",
         "line-gap-width": 0,
@@ -908,7 +934,7 @@
         ["==", "kind", "minor_road"],
         ["==", "kind_detail", "service"]
       ],
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {"line-cap": "round", "line-join": "round"},
       "paint": {
         "line-color": [
           "interpolate",
@@ -946,7 +972,7 @@
         ["==", "kind", "minor_road"],
         ["!=", "kind_detail", "service"]
       ],
-      "layout": { "line-join": "round", "line-cap": "round" },
+      "layout": {"line-join": "round", "line-cap": "round"},
       "paint": {
         "line-color": [
           "interpolate",
@@ -1085,7 +1111,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": { "line-cap": "round" },
+      "layout": {"line-cap": "round"},
       "paint": {
         "line-color": "#A1B0C4",
         "line-width": [
@@ -1200,7 +1226,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": { "line-join": "miter", "line-cap": "butt" },
+      "layout": {"line-join": "miter", "line-cap": "butt"},
       "paint": {
         "line-color": "rgba(78, 89, 118, 1)",
         "line-gap-width": 0,
@@ -1300,27 +1326,22 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
+      "layout": {"line-join": "round", "line-cap": "butt"},
       "paint": {
-        "line-color": "#e0e0e0",
-        "line-gap-width": [
-          "interpolate",
-          ["exponential", 1.6],
-          ["zoom"],
-          7,
-          0,
-          7.5,
-          0.5,
-          18,
-          10
-        ],
+        "line-color": "rgba(161, 171, 195, 1)",
+        "line-gap-width": 0,
         "line-width": [
           "interpolate",
-          ["exponential", 1.6],
+          ["exponential", 1.5],
           ["zoom"],
-          9,
+          3,
           0,
-          9.5,
-          1.5
+          18,
+          27,
+          22,
+          270,
+          24,
+          320
         ]
       }
     },
@@ -1398,20 +1419,21 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
+      "layout": {"line-cap": "round", "line-join": "round"},
       "paint": {
-        "line-color": "#f5f5f5",
+        "line-color": "#BEC5D8",
         "line-width": [
           "interpolate",
-          ["exponential", 1.6],
+          ["exponential", 1.5],
           ["zoom"],
-          6,
-          0,
-          12,
-          1.6,
-          15,
           3,
+          0,
           18,
-          13
+          26,
+          22,
+          260,
+          24,
+          300
         ]
       }
     },
@@ -1426,7 +1448,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": { "line-cap": "butt", "line-join": "miter" },
+      "layout": {"line-cap": "butt", "line-join": "miter"},
       "paint": {
         "line-color": "#A1B0C4",
         "line-width": [
@@ -2673,621 +2695,6 @@
       }
     },
     {
-      "id": "water_label_lakes",
-      "type": "symbol",
-      "source": "protomaps",
-      "source-layer": "water",
-      "filter": ["in", "kind", "lake", "water"],
-      "layout": {
-        "text-font": ["Noto Sans Italic"],
-        "text-field": [
-          "case",
-          [
-            "all",
-            ["any", ["has", "name"], ["has", "pgf:name"]],
-            ["!", ["any", ["has", "name2"], ["has", "pgf:name2"]]],
-            ["!", ["any", ["has", "name3"], ["has", "pgf:name3"]]]
-          ],
-          [
-            "case",
-            ["has", "script"],
-            [
-              "case",
-              [
-                "any",
-                ["is-supported-script", ["get", "name"]],
-                ["has", "pgf:name"]
-              ],
-              [
-                "format",
-                ["coalesce", ["get", "name:en"], ["get", "name:en"]],
-                {},
-                "\n",
-                {},
-                [
-                  "case",
-                  [
-                    "all",
-                    ["!", ["has", "name:en"]],
-                    ["has", "name:en"],
-                    ["!", ["has", "script"]]
-                  ],
-                  "",
-                  ["coalesce", ["get", "pgf:name"], ["get", "name"]]
-                ],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ],
-              ["get", "name:en"]
-            ],
-            [
-              "format",
-              [
-                "coalesce",
-                ["get", "name:en"],
-                ["get", "pgf:name"],
-                ["get", "name"]
-              ],
-              {}
-            ]
-          ],
-          [
-            "all",
-            ["any", ["has", "name"], ["has", "pgf:name"]],
-            ["any", ["has", "name2"], ["has", "pgf:name2"]],
-            ["!", ["any", ["has", "name3"], ["has", "pgf:name3"]]]
-          ],
-          [
-            "case",
-            ["all", ["has", "script"], ["has", "script2"]],
-            [
-              "format",
-              ["get", "name:en"],
-              {},
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              },
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script2"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              }
-            ],
-            [
-              "case",
-              ["has", "script2"],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name"],
-                  ["get", "name"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script2"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name2"],
-                  ["get", "name2"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ]
-            ]
-          ],
-          [
-            "case",
-            ["all", ["has", "script"], ["has", "script2"], ["has", "script3"]],
-            [
-              "format",
-              ["get", "name:en"],
-              {},
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              },
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script2"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              },
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script3"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              }
-            ],
-            [
-              "case",
-              ["!", ["has", "script"]],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name"],
-                  ["get", "name"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script2"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                },
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script3"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ],
-              ["!", ["has", "script2"]],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name2"],
-                  ["get", "name2"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                },
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script3"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name3"],
-                  ["get", "name3"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                },
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script2"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ]
-            ]
-          ]
-        ],
-        "text-size": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          3,
-          10,
-          6,
-          12,
-          10,
-          12
-        ],
-        "text-letter-spacing": 0.1,
-        "text-max-width": 9
-      },
-      "paint": {
-        "text-color": "#728dd4",
-        "text-halo-color": "#80deea",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "roads_labels_major",
-      "type": "symbol",
-      "source": "protomaps",
-      "source-layer": "roads",
-      "minzoom": 11,
-      "filter": ["in", "kind", "highway", "major_road"],
-      "layout": {
-        "symbol-sort-key": ["get", "min_zoom"],
-        "symbol-placement": "line",
-        "text-font": ["Noto Sans Regular"],
-        "text-field": [
-          "case",
-          [
-            "all",
-            ["any", ["has", "name"], ["has", "pgf:name"]],
-            ["!", ["any", ["has", "name2"], ["has", "pgf:name2"]]],
-            ["!", ["any", ["has", "name3"], ["has", "pgf:name3"]]]
-          ],
-          [
-            "case",
-            ["has", "script"],
-            [
-              "case",
-              [
-                "any",
-                ["is-supported-script", ["get", "name"]],
-                ["has", "pgf:name"]
-              ],
-              [
-                "format",
-                ["coalesce", ["get", "name:en"], ["get", "name:en"]],
-                {},
-                "\n",
-                {},
-                [
-                  "case",
-                  [
-                    "all",
-                    ["!", ["has", "name:en"]],
-                    ["has", "name:en"],
-                    ["!", ["has", "script"]]
-                  ],
-                  "",
-                  ["coalesce", ["get", "pgf:name"], ["get", "name"]]
-                ],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ],
-              ["get", "name:en"]
-            ],
-            [
-              "format",
-              [
-                "coalesce",
-                ["get", "name:en"],
-                ["get", "pgf:name"],
-                ["get", "name"]
-              ],
-              {}
-            ]
-          ],
-          [
-            "all",
-            ["any", ["has", "name"], ["has", "pgf:name"]],
-            ["any", ["has", "name2"], ["has", "pgf:name2"]],
-            ["!", ["any", ["has", "name3"], ["has", "pgf:name3"]]]
-          ],
-          [
-            "case",
-            ["all", ["has", "script"], ["has", "script2"]],
-            [
-              "format",
-              ["get", "name:en"],
-              {},
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              },
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script2"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              }
-            ],
-            [
-              "case",
-              ["has", "script2"],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name"],
-                  ["get", "name"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script2"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name2"],
-                  ["get", "name2"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ]
-            ]
-          ],
-          [
-            "case",
-            ["all", ["has", "script"], ["has", "script2"], ["has", "script3"]],
-            [
-              "format",
-              ["get", "name:en"],
-              {},
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              },
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script2"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              },
-              "\n",
-              {},
-              ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
-              {
-                "text-font": [
-                  "case",
-                  ["==", ["get", "script3"], "Devanagari"],
-                  ["literal", ["Noto Sans Devanagari Regular v1"]],
-                  ["literal", ["Noto Sans Regular"]]
-                ]
-              }
-            ],
-            [
-              "case",
-              ["!", ["has", "script"]],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name"],
-                  ["get", "name"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script2"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                },
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script3"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ],
-              ["!", ["has", "script2"]],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name2"],
-                  ["get", "name2"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                },
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script3"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ],
-              [
-                "format",
-                [
-                  "coalesce",
-                  ["get", "name:en"],
-                  ["get", "pgf:name3"],
-                  ["get", "name3"]
-                ],
-                {},
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                },
-                "\n",
-                {},
-                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
-                {
-                  "text-font": [
-                    "case",
-                    ["==", ["get", "script2"], "Devanagari"],
-                    ["literal", ["Noto Sans Devanagari Regular v1"]],
-                    ["literal", ["Noto Sans Regular"]]
-                  ]
-                }
-              ]
-            ]
-          ]
-        ],
-        "text-size": 12
-      },
-      "paint": {
-        "text-color": "#938a8d",
-        "text-halo-color": "#ffffff",
-        "text-halo-width": 1
-      }
-    },
-    {
       "id": "pois",
       "type": "symbol",
       "source": "protomaps",
@@ -3325,13 +2732,6 @@
         [">=", ["zoom"], ["+", ["get", "min_zoom"], 0]]
       ],
       "layout": {
-        "icon-image": [
-          "match",
-          ["get", "kind"],
-          "station",
-          "train_station",
-          ["get", "kind"]
-        ],
         "text-font": ["Noto Sans Regular"],
         "text-justify": "auto",
         "text-field": [
@@ -3620,8 +3020,9 @@
         ],
         "text-size": ["interpolate", ["linear"], ["zoom"], 17, 10, 19, 16],
         "text-max-width": 8,
-        "text-offset": [1.1, 0],
-        "text-variable-anchor": ["left", "right"]
+        "text-offset": [0, 0],
+        "text-variable-anchor": ["center", "center"],
+        "symbol-placement": "point"
       },
       "paint": {
         "text-color": [
@@ -3669,8 +3070,9 @@
           "#6A5B8F",
           "#e2dfda"
         ],
-        "text-halo-color": "#e2dfda",
-        "text-halo-width": 1
+        "text-halo-color": "#FFF",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5
       }
     },
     {
