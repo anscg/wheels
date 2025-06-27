@@ -71,6 +71,7 @@ function App() {
           bearing: 0,
         }}
         mapStyle="/mapstyle.json"
+        attributionControl={false}
       >
         {/* We only render the sources and layers once the data is available */}
         {mtrData &&
