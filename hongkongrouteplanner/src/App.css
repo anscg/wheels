@@ -56,10 +56,10 @@ html {
 .wheels-icon {
     position: absolute;
     left: 20px;
-    bottom: 0px;
+    bottom: 20px;
     width: 150px;
-    height: 150px;
-    opacity: 0.8;
+    height: 60px;
+    opacity: 0.95;
     z-index: 10;
     user-select: none;
     -webkit-user-select: none;
