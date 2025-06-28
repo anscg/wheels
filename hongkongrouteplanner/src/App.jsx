@@ -72,6 +72,8 @@ function App() {
         }}
         mapStyle="/mapstyle.json"
         attributionControl={false}
+        pitchWithRotate={false}
+        dragPitch={false}
       >
         {/* We only render the sources and layers once the data is available */}
         {mtrData &&
