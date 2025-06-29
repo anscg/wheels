@@ -186,7 +186,7 @@
       "source": "shades",
       "layout": {"visibility": "visible"},
       "paint": {
-        "hillshade-exaggeration": {"stops": [[12, 0.04], [15, 0.02]]},
+        "hillshade-exaggeration": {"stops": [[12, 0.03], [15, 0.02]]},
         "hillshade-illumination-anchor": "viewport",
         "hillshade-accent-color": "rgba(63, 255, 0, 1)",
         "hillshade-highlight-color": "#FFFFFF",
@@ -699,6 +699,8 @@
           "interpolate",
           ["exponential", 1.5],
           ["zoom"],
+          12,
+          0,
           14,
           1,
           18,
@@ -1000,6 +1002,8 @@
           "interpolate",
           ["exponential", 1.5],
           ["zoom"],
+          12,
+          0,
           14,
           1,
           18,
@@ -1009,7 +1013,7 @@
           24,
           260
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0.6, 15, 1]
+        "line-opacity": 1
       }
     },
     {
