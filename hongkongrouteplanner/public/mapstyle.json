@@ -7,6 +7,13 @@
       "attribution": "<a href=\"https://github.com/protomaps/basemaps\">Wheels</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
       "type": "vector",
       "url": "pmtiles://https://direct.maps.wheels.anscg.net/hongkong.pmtiles"
+    },
+    "shades": {
+      "type": "raster-dem",
+      "tiles": ["https://anscg.github.io/tiles/{z}/{x}/{y}.png"],
+      "minzoom": 9,
+      "maxzoom": 14,
+      "tileSize": 256
     }
   },
   "sprite": "https://protomaps.github.io/basemaps-assets/sprites/v4/light",
@@ -172,6 +179,19 @@
       "source-layer": "landuse",
       "filter": ["==", "kind", "industrial"],
       "paint": {"fill-color": "#d1dde1"}
+    },
+    {
+      "id": "hillshade",
+      "type": "hillshade",
+      "source": "shades",
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "hillshade-exaggeration": {"stops": [[12, 0.04], [15, 0.02]]},
+        "hillshade-illumination-anchor": "viewport",
+        "hillshade-accent-color": "rgba(63, 255, 0, 1)",
+        "hillshade-highlight-color": "#FFFFFF",
+        "hillshade-shadow-color": "#000000"
+      }
     },
     {
       "id": "landuse_school",
