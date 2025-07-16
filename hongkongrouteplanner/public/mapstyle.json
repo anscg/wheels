@@ -1,7 +1,7 @@
 {
   "version": 8,
   "name": "wheels",
-  "metadata": {"maputnik:renderer": "mlgljs"},
+  "metadata": { "maputnik:renderer": "mlgljs" },
   "sources": {
     "protomaps": {
       "attribution": "<a href=\"https://github.com/protomaps/basemaps\">Wheels</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
@@ -24,8 +24,8 @@
     {
       "id": "background",
       "type": "background",
-      "layout": {"visibility": "visible"},
-      "paint": {"background-color": "rgba(153, 221, 255, 1)"}
+      "layout": { "visibility": "visible" },
+      "paint": { "background-color": "rgba(153, 221, 255, 1)" }
     },
     {
       "id": "earth-copy-copy",
@@ -33,7 +33,7 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(0, 0, 0, 1)",
         "fill-antialias": false,
@@ -47,7 +47,7 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(0, 0, 0, 1)",
         "fill-antialias": false,
@@ -61,15 +61,15 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "#f4f0ef", "fill-antialias": false}
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "#f4f0ef", "fill-antialias": false }
     },
     {
       "id": "landcover",
       "type": "fill",
       "source": "protomaps",
       "source-layer": "landcover",
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": [
           "match",
@@ -97,8 +97,8 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "aerodrome"],
-      "layout": {"visibility": "none"},
-      "paint": {"fill-color": "#dadbdf"}
+      "layout": { "visibility": "none" },
+      "paint": { "fill-color": "#dadbdf" }
     },
     {
       "id": "landuse_industrial",
@@ -106,8 +106,8 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "industrial"],
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(225, 217, 209, 1)", "fill-opacity": 0.5}
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "rgba(225, 217, 209, 1)", "fill-opacity": 0.5 }
     },
     {
       "id": "landuse_park",
@@ -190,7 +190,7 @@
         "all",
         ["in", "kind", "allotments", "village_green", "playground"]
       ],
-      "paint": {"fill-color": "#9cd3b4", "fill-opacity": 0.7}
+      "paint": { "fill-color": "#9cd3b4", "fill-opacity": 0.7 }
     },
     {
       "id": "landuse_hospital",
@@ -198,7 +198,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "hospital"],
-      "paint": {"fill-color": "#e4dad9"}
+      "paint": { "fill-color": "#e4dad9" }
     },
     {
       "id": "landuse_school",
@@ -206,8 +206,8 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "school", "university", "college"],
-      "layout": {"visibility": "none"},
-      "paint": {"fill-color": "#e4ded7"}
+      "layout": { "visibility": "none" },
+      "paint": { "fill-color": "#e4ded7" }
     },
     {
       "id": "landuse_beach",
@@ -215,7 +215,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "beach"],
-      "paint": {"fill-color": "#e8e4d0"}
+      "paint": { "fill-color": "#e8e4d0" }
     },
     {
       "id": "landuse_zoo",
@@ -223,8 +223,8 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "zoo"],
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "#c6dcdc"}
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "#c6dcdc" }
     },
     {
       "id": "roads_runway",
@@ -275,8 +275,8 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["any", ["in", "kind", "runway", "taxiway"]],
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "#e9e9ed"}
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "#e9e9ed" }
     },
     {
       "id": "hillshade",
@@ -303,7 +303,7 @@
       "source": "protomaps",
       "source-layer": "water",
       "filter": ["==", "$type", "Polygon"],
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(153, 221, 255, 1)",
         "fill-outline-color": "rgba(0, 0, 0, .1)",
@@ -317,7 +317,7 @@
       "source-layer": "water",
       "minzoom": 14,
       "filter": ["in", "kind", "stream"],
-      "paint": {"line-color": "#80deea", "line-width": 0.5}
+      "paint": { "line-color": "#80deea", "line-width": 0.5 }
     },
     {
       "id": "water_river",
@@ -347,8 +347,8 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "pedestrian", "dam"],
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "#e3e0d4"}
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "#e3e0d4" }
     },
     {
       "id": "landuse_pier",
@@ -356,7 +356,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "pier"],
-      "paint": {"fill-color": "#e0e0e0"}
+      "paint": { "fill-color": "#e0e0e0" }
     },
     {
       "id": "buildings",
@@ -364,7 +364,7 @@
       "source": "protomaps",
       "source-layer": "buildings",
       "filter": ["in", "kind", "building", "building_part"],
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(224, 215, 215, 1)",
         "fill-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 15, 1],
@@ -396,7 +396,7 @@
       "source": "protomaps",
       "source-layer": "roads",
       "filter": ["all", ["has", "is_tunnel"], ["==", "kind", "minor_road"]],
-      "layout": {"line-join": "bevel"},
+      "layout": { "line-join": "bevel" },
       "paint": {
         "line-color": "rgba(113, 113, 113, 1)",
         "line-dasharray": [0.2, 0.2],
@@ -693,7 +693,7 @@
         ["in", "kind", "other", "path"],
         ["!=", "kind_detail", "pier"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(201, 191, 187, 1)",
         "line-width": [
@@ -717,7 +717,7 @@
       "source": "protomaps",
       "source-layer": "roads",
       "filter": ["==", "kind", "cycleway"],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(0, 162, 49, 1)",
         "line-width": [
@@ -739,7 +739,7 @@
       "source": "protomaps",
       "source-layer": "roads",
       "filter": ["==", "kind", "cycleway"],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(27, 212, 84, 1)",
         "line-width": [
@@ -767,7 +767,7 @@
         ["in", "kind", "other", "path"],
         ["!=", "kind_detail", "pier"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "#EEEAEE",
         "line-width": [
@@ -798,7 +798,7 @@
         ["==", "kind", "minor_road"],
         ["==", "kind_detail", "service"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-gap-width": 0,
         "line-width": [
@@ -851,7 +851,7 @@
         ["==", "kind", "minor_road"],
         ["!=", "kind_detail", "service"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(161, 171, 195, 1)",
         "line-gap-width": 0,
@@ -902,7 +902,7 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
-      "layout": {"line-join": "round", "line-cap": "round"},
+      "layout": { "line-join": "round", "line-cap": "round" },
       "paint": {
         "line-color": "rgba(0, 0, 0, 1)",
         "line-gap-width": 0,
@@ -934,7 +934,7 @@
         ["!has", "is_bridge"],
         ["==", "kind", "major_road"]
       ],
-      "layout": {"line-cap": "round"},
+      "layout": { "line-cap": "round" },
       "paint": {
         "line-color": "rgba(161, 171, 195, 1)",
         "line-gap-width": 0,
@@ -966,7 +966,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": {"line-cap": "round"},
+      "layout": { "line-cap": "round" },
       "paint": {
         "line-color": "rgba(78, 89, 118, 1)",
         "line-gap-width": 0,
@@ -995,7 +995,7 @@
         ["==", "kind", "minor_road"],
         ["!=", "kind_detail", "service"]
       ],
-      "layout": {"line-join": "round", "line-cap": "round"},
+      "layout": { "line-join": "round", "line-cap": "round" },
       "paint": {
         "line-color": [
           "interpolate",
@@ -1057,7 +1057,7 @@
         ["==", "kind", "minor_road"],
         ["==", "kind_detail", "service"]
       ],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": [
           "interpolate",
@@ -1131,7 +1131,7 @@
         ["!has", "is_bridge"],
         ["==", "kind", "major_road"]
       ],
-      "layout": {"line-join": "miter", "line-cap": "round"},
+      "layout": { "line-join": "miter", "line-cap": "round" },
       "paint": {
         "line-width": [
           "interpolate",
@@ -1199,7 +1199,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": {"line-cap": "round"},
+      "layout": { "line-cap": "round" },
       "paint": {
         "line-color": "#A1B0C4",
         "line-width": [
@@ -1244,7 +1244,7 @@
       "source": "protomaps",
       "source-layer": "roads",
       "filter": ["==", "kind", "cycleway"],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(27, 212, 84, 1)",
         "line-width": [
@@ -1261,7 +1261,12 @@
           100
         ],
         "line-gap-width": 0,
-        "line-opacity": {"stops": [[6, 0.3], [10, 0.3]]}
+        "line-opacity": {
+          "stops": [
+            [6, 0.3],
+            [10, 0.3]
+          ]
+        }
       }
     },
     {
@@ -1270,7 +1275,7 @@
       "source": "protomaps",
       "source-layer": "roads",
       "filter": ["==", "kind", "cycleway"],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(27, 212, 84, 1)",
         "line-width": [
@@ -1312,7 +1317,7 @@
       "source": "protomaps",
       "source-layer": "boundaries",
       "filter": [">", "kind_detail", 2],
-      "layout": {"visibility": "none"},
+      "layout": { "visibility": "none" },
       "paint": {
         "line-color": "#adadad",
         "line-width": 0.4,
@@ -1361,7 +1366,12 @@
       },
       "paint": {
         "icon-color": "#000000",
-        "icon-opacity": {"stops": [[15, 0], [16, 1]]}
+        "icon-opacity": {
+          "stops": [
+            [15, 0],
+            [16, 1]
+          ]
+        }
       }
     },
     {
@@ -1404,7 +1414,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": {"line-join": "miter", "line-cap": "butt"},
+      "layout": { "line-join": "miter", "line-cap": "butt" },
       "paint": {
         "line-color": "rgba(78, 89, 118, 1)",
         "line-gap-width": 0,
@@ -1504,7 +1514,7 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
-      "layout": {"line-join": "round", "line-cap": "butt"},
+      "layout": { "line-join": "round", "line-cap": "butt" },
       "paint": {
         "line-color": "rgba(161, 171, 195, 1)",
         "line-gap-width": 0,
@@ -1530,7 +1540,7 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["in", "kind", "other", "path"]],
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "line-color": "#ebebeb",
         "line-dasharray": [2, 1],
@@ -1598,7 +1608,7 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
-      "layout": {"line-cap": "round", "line-join": "round"},
+      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "#BEC5D8",
         "line-width": [
@@ -1627,7 +1637,7 @@
         ["==", "kind", "highway"],
         ["!has", "is_link"]
       ],
-      "layout": {"line-cap": "round", "line-join": "miter"},
+      "layout": { "line-cap": "round", "line-join": "miter" },
       "paint": {
         "line-color": "#A1B0C4",
         "line-width": [
@@ -4088,3 +4098,315 @@
               ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
               {
                 "text-font": [
+                  "case",
+                  ["==", ["get", "script3"], "Devanagari"],
+                  ["literal", ["Noto Sans Devanagari Regular v1"]],
+                  ["literal", ["Noto Sans Regular"]]
+                ]
+              }
+            ],
+            [
+              "case",
+              ["!", ["has", "script"]],
+              [
+                "format",
+                [
+                  "coalesce",
+                  ["get", "name:en"],
+                  ["get", "pgf:name"],
+                  ["get", "name"]
+                ],
+                {},
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script2"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                },
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script3"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ],
+              ["!", ["has", "script2"]],
+              [
+                "format",
+                [
+                  "coalesce",
+                  ["get", "name:en"],
+                  ["get", "pgf:name2"],
+                  ["get", "name2"]
+                ],
+                {},
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                },
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script3"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ],
+              [
+                "format",
+                [
+                  "coalesce",
+                  ["get", "name:en"],
+                  ["get", "pgf:name3"],
+                  ["get", "name3"]
+                ],
+                {},
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                },
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script2"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ]
+            ]
+          ]
+        ],
+        "text-font": ["Geist SemiBold"],
+        "symbol-sort-key": [
+          "case",
+          ["has", "sort_key"],
+          ["get", "sort_key"],
+          ["get", "min_zoom"]
+        ],
+        "text-padding": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          5,
+          3,
+          8,
+          7,
+          12,
+          11
+        ],
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          2,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 13],
+            8,
+            [">=", ["get", "population_rank"], 13],
+            13,
+            0
+          ],
+          4,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 13],
+            10,
+            [">=", ["get", "population_rank"], 13],
+            15,
+            0
+          ],
+          6,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 12],
+            11,
+            [">=", ["get", "population_rank"], 12],
+            17,
+            0
+          ],
+          8,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 11],
+            11,
+            [">=", ["get", "population_rank"], 11],
+            18,
+            0
+          ],
+          10,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 9],
+            12,
+            [">=", ["get", "population_rank"], 9],
+            20,
+            0
+          ],
+          15,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 8],
+            12,
+            [">=", ["get", "population_rank"], 8],
+            22,
+            0
+          ]
+        ],
+        "icon-padding": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          0,
+          8,
+          4,
+          10,
+          8,
+          12,
+          6,
+          22,
+          2
+        ],
+        "text-justify": "auto",
+        "text-anchor": ["step", ["zoom"], "left", 8, "center"],
+        "text-radial-offset": 0.4,
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.2,
+        "text-max-width": 10
+      },
+      "paint": {
+        "text-color": "#5c5c5c",
+        "text-halo-color": "#e0e0e0",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "places_country",
+      "type": "symbol",
+      "source": "protomaps",
+      "source-layer": "places",
+      "filter": ["==", "kind", "country"],
+      "layout": {
+        "symbol-sort-key": [
+          "case",
+          ["has", "sort_key"],
+          ["get", "sort_key"],
+          ["get", "min_zoom"]
+        ],
+        "text-field": [
+          "format",
+          ["coalesce", ["get", "name:en"], ["get", "name:en"]],
+          {}
+        ],
+        "text-font": ["Noto Sans Medium"],
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          2,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 10],
+            8,
+            [">=", ["get", "population_rank"], 10],
+            12,
+            0
+          ],
+          6,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 8],
+            10,
+            [">=", ["get", "population_rank"], 8],
+            18,
+            0
+          ],
+          8,
+          [
+            "case",
+            ["<", ["get", "population_rank"], 7],
+            11,
+            [">=", ["get", "population_rank"], 7],
+            20,
+            0
+          ]
+        ],
+        "icon-padding": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          2,
+          14,
+          2,
+          16,
+          20,
+          17,
+          2,
+          22,
+          2
+        ],
+        "text-transform": "uppercase"
+      },
+      "paint": {
+        "text-color": "#a3a3a3",
+        "text-halo-color": "#e2dfda",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "crossway",
+      "type": "symbol",
+      "source": "protomaps",
+      "source-layer": "transit",
+      "layout": {
+        "icon-image": "park",
+        "symbol-placement": "point",
+        "icon-allow-overlap": true,
+        "visibility": "none"
+      }
+    },
+    {
+      "id": "bike-barriers",
+      "type": "circle",
+      "source": "protomaps",
+      "source-layer": "transit",
+      "filter": ["==", "kind", "barrier"],
+      "paint": { "circle-color": "#ff6600", "circle-radius": 100 }
+    }
+  ],
+  "id": "om5uzem"
+}
